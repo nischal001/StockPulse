@@ -1,0 +1,104 @@
+/* 
+ * This file is for custom styles that extend Tailwind CSS
+ * Most styling is done inline with Tailwind classes
+ */
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animate on scroll classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(201, 74%, 46%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(201, 74%, 35%);
+}
+
+/* Custom focus styles */
+input:focus, 
+select:focus, 
+textarea:focus, 
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(201, 74%, 46%, 0.3);
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Utility classes */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom styling for the form */
+.input-focus:focus {
+  border-color: hsl(201, 74%, 46%);
+  box-shadow: 0 0 0 2px hsla(201, 74%, 46%, 0.2);
+}
+
+/* FAQ toggle animation */
+.faq-toggle i {
+  transition: transform 0.3s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(90deg, hsl(201, 74%, 46%), hsl(152, 69%, 31%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card hover effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

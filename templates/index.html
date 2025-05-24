@@ -1,0 +1,658 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative gradient-bg text-white">
+    <div class="container mx-auto px-4 py-20 md:py-32">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
+                    Expert Stock Market Insights Delivered to Your WhatsApp
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    Get daily market analysis, stock picks, and investment insights from professional analysts directly on your phone.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#free-trial" class="w-full sm:w-auto bg-white text-primary-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-md text-lg transition duration-300 btn-pulse text-center">
+                        Start 7-Day Free Trial
+                    </a>
+                    <a href="#how-it-works" class="w-full sm:w-auto border border-white text-white hover:bg-white hover:text-primary-700 font-semibold py-3 px-6 rounded-md text-lg transition duration-300 text-center">
+                        Learn How It Works
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://pixabay.com/get/gec3734917a7cc860617277c97bb5664e9e76670feec32a70932acfa018aa361bbddf5f91e220d93a0d5dcee10d5f20bdc2ff8578c29877896009eef79a6b2391_1280.jpg" 
+                     alt="Professional stock market analysis" 
+                     class="rounded-lg shadow-2xl max-w-full h-auto lg:max-w-lg">
+            </div>
+        </div>
+    </div>
+    <div class="custom-shape-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="bg-white py-8 border-b">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="p-4">
+                <div class="text-primary-600 text-4xl font-bold mb-2">12,000+</div>
+                <p class="text-gray-600">Active Subscribers</p>
+            </div>
+            <div class="p-4">
+                <div class="text-primary-600 text-4xl font-bold mb-2">94%</div>
+                <p class="text-gray-600">Accuracy Rate</p>
+            </div>
+            <div class="p-4">
+                <div class="text-primary-600 text-4xl font-bold mb-2">5 Years</div>
+                <p class="text-gray-600">Market Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">How It Works</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Getting started with MarketPulse is simple. Follow these three easy steps to receive daily market insights.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+                <div class="absolute -top-5 -left-5 w-14 h-14 rounded-full bg-primary-600 text-white flex items-center justify-center text-2xl font-bold">1</div>
+                <div class="text-center mb-6 pt-6">
+                    <i class="fas fa-user-plus text-5xl text-primary-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Sign Up for Free Trial</h3>
+                    <p class="text-gray-600">Fill out the simple form below with your name and mobile number to start your 7-day free trial.</p>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+                <div class="absolute -top-5 -left-5 w-14 h-14 rounded-full bg-primary-600 text-white flex items-center justify-center text-2xl font-bold">2</div>
+                <div class="text-center mb-6 pt-6">
+                    <i class="fab fa-whatsapp text-5xl text-primary-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Connect on WhatsApp</h3>
+                    <p class="text-gray-600">After registration, you'll be redirected to WhatsApp to start receiving your daily market updates.</p>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-8 relative hover:shadow-xl transition-shadow">
+                <div class="absolute -top-5 -left-5 w-14 h-14 rounded-full bg-primary-600 text-white flex items-center justify-center text-2xl font-bold">3</div>
+                <div class="text-center mb-6 pt-6">
+                    <i class="fas fa-chart-line text-5xl text-primary-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Receive Daily Insights</h3>
+                    <p class="text-gray-600">Get professional market analysis, stock recommendations, and investment tips every trading day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section id="benefits" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Why Choose MarketPulse</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Our service provides unique advantages that help you make better investment decisions.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-award text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Expert Analysis</h3>
+                    <p class="text-gray-600">Our team of financial experts with years of market experience provides in-depth analysis of market trends.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-bolt text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Real-Time Updates</h3>
+                    <p class="text-gray-600">Get timely updates about market movements and breaking financial news that could impact your investments.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Convenience</h3>
+                    <p class="text-gray-600">Receive all insights directly on WhatsApp - no need to download additional apps or check multiple sources.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-lock text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Exclusive Content</h3>
+                    <p class="text-gray-600">Access to exclusive stock picks and investment strategies not available to the general public.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Educational Resources</h3>
+                    <p class="text-gray-600">Learn as you invest with our educational content designed to improve your understanding of the market.</p>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <div class="flex-shrink-0 mr-4">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center">
+                        <i class="fas fa-headset text-2xl text-primary-600"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-2">Dedicated Support</h3>
+                    <p class="text-gray-600">Our customer support team is available to answer your questions and provide assistance when needed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Image Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h2 class="font-display font-bold text-3xl md:text-4xl mb-6">Make Informed Investment Decisions</h2>
+                <p class="text-xl text-gray-600 mb-6">
+                    Our team of financial professionals analyzes market trends, economic indicators, and company performance to provide you with actionable insights.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Daily market summaries and outlook</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Weekly stock recommendations with entry and exit points</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Sector-specific analysis and opportunities</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Important economic events and their potential impact</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://pixabay.com/get/g33833759f9741906fcf23135eb4c1829230dc076359a0f7c134295c9be2813c6f849e0677257344b85344058d0bf0cfa5502848f87b3b46cb8ec7b1d6ee59ff4_1280.jpg" 
+                     alt="Financial professionals working" 
+                     class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Subscription Plans</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Choose the plan that fits your investment needs. All plans include the same premium features.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Monthly Plan -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
+                <div class="p-8 text-center">
+                    <h3 class="font-display font-bold text-2xl mb-4">Monthly</h3>
+                    <div class="text-primary-600 text-5xl font-bold mb-4">₹999</div>
+                    <p class="text-gray-600 mb-6">per month</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Daily market insights</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Stock recommendations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>WhatsApp delivery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Cancel anytime</span>
+                        </li>
+                    </ul>
+                    <a href="#free-trial" class="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 text-center">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quarterly Plan (Highlighted) -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden border-2 border-primary-500 transform md:-translate-y-4 hover:shadow-2xl transition-shadow">
+                <div class="bg-primary-500 text-white text-center py-2">
+                    <span class="font-semibold">MOST POPULAR</span>
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="font-display font-bold text-2xl mb-4">Quarterly</h3>
+                    <div class="text-primary-600 text-5xl font-bold mb-4">₹2,499</div>
+                    <p class="text-gray-600 mb-6">per quarter (₹833/month)</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Daily market insights</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Stock recommendations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>WhatsApp delivery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>16% savings</span>
+                        </li>
+                    </ul>
+                    <a href="#free-trial" class="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 text-center">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Yearly Plan -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
+                <div class="p-8 text-center">
+                    <h3 class="font-display font-bold text-2xl mb-4">Yearly</h3>
+                    <div class="text-primary-600 text-5xl font-bold mb-4">₹7,999</div>
+                    <p class="text-gray-600 mb-6">per year (₹666/month)</p>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Daily market insights</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Stock recommendations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>WhatsApp delivery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>33% savings</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Exclusive annual report</span>
+                        </li>
+                    </ul>
+                    <a href="#free-trial" class="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300 text-center">
+                        Start Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile App Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 order-2 md:order-1">
+                <img src="https://pixabay.com/get/gff711ce42d1e4c7866d209dc85b9df74ab3a75f55c6068cbdfb91bf1e202b924ff105dc19a08b8b570750ae87814cffcb5caf840d121ce0782d56ae5f926d1f7_1280.jpg" 
+                     alt="Mobile device with financial app" 
+                     class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
+            <div class="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2 md:pl-12">
+                <h2 class="font-display font-bold text-3xl md:text-4xl mb-6">Market Insights on Your Mobile</h2>
+                <p class="text-xl text-gray-600 mb-6">
+                    Receive all your stock market updates directly on WhatsApp. No need to download additional apps or check email.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white mr-4">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Seamless WhatsApp Integration</h4>
+                            <p class="text-gray-600">Get updates on the app you already use daily</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-bell text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Instant Notifications</h4>
+                            <p class="text-gray-600">Never miss important market movements</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-500 flex items-center justify-center text-white mr-4">
+                            <i class="fas fa-chart-pie text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Visual Market Data</h4>
+                            <p class="text-gray-600">Charts and visual aids for better understanding</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">What Our Subscribers Say</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Join thousands of investors who trust MarketPulse for their daily market insights.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="text-amber-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    "MarketPulse has completely changed how I approach investing. The daily insights are concise yet comprehensive, and I've seen substantial growth in my portfolio since subscribing."
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary-700 font-bold text-xl">RS</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Rahul Singh</h4>
+                        <p class="text-gray-500 text-sm">Subscribed for 1 year</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="text-amber-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    "What I appreciate most is the convenience. Getting market updates on WhatsApp means I can stay informed even on busy days. The stock recommendations have been spot on!"
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary-700 font-bold text-xl">AD</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Ananya Das</h4>
+                        <p class="text-gray-500 text-sm">Subscribed for 6 months</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-50 rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="text-amber-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-6">
+                    "As a beginner investor, I was looking for guidance that wasn't overwhelming. MarketPulse delivers information in a way that's easy to understand but still comprehensive. Highly recommended!"
+                </p>
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-primary-700 font-bold text-xl">VP</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Vikram Patel</h4>
+                        <p class="text-gray-500 text-sm">Subscribed for 3 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA / Form Section -->
+<section id="free-trial" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Start Your 7-Day Free Trial</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Enter your details below to start receiving expert stock market insights on WhatsApp. No credit card required.
+                </p>
+            </div>
+            
+            <div class="bg-white text-gray-800 rounded-lg shadow-2xl p-8">
+                <form id="signup-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first_name" class="block text-gray-700 font-medium mb-2">First Name</label>
+                            <input type="text" id="first_name" name="first_name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500" required>
+                            <div id="first_name_error" class="text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                        <div>
+                            <label for="last_name" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500" required>
+                            <div id="last_name_error" class="text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="mobile_number" class="block text-gray-700 font-medium mb-2">Mobile Number</label>
+                        <div class="flex">
+                            <div class="bg-gray-100 border border-gray-300 rounded-l-md px-4 py-3 text-gray-600 flex items-center">+91</div>
+                            <input type="tel" id="mobile_number" name="mobile_number" class="w-full px-4 py-3 border border-gray-300 rounded-r-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500" pattern="[0-9]{10}" maxlength="10" required>
+                        </div>
+                        <div id="mobile_number_error" class="text-red-500 text-sm mt-1 hidden"></div>
+                        <p class="text-gray-500 text-sm mt-2">We'll send market updates to this WhatsApp number</p>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <input type="checkbox" id="terms" name="terms" class="mt-1 mr-2" required>
+                        <label for="terms" class="text-gray-600 text-sm">
+                            I agree to the <a href="/terms" class="text-primary-600 hover:underline">Terms of Service</a> and <a href="/privacy" class="text-primary-600 hover:underline">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <button type="submit" id="submit-btn" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-md transition duration-300">
+                            Start Free Trial
+                        </button>
+                    </div>
+                    
+                    <div id="form-success" class="hidden bg-green-100 text-green-700 p-4 rounded-md">
+                        <p class="font-medium">Thank you for signing up!</p>
+                        <p>Click the button below to start your WhatsApp trial.</p>
+                    </div>
+                    
+                    <div id="whatsapp-button" class="hidden">
+                        <a href="#" id="whatsapp-link" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300 flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-xl mr-2"></i> Open WhatsApp
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Badges Section -->
+<section class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+            <h3 class="font-display font-semibold text-xl mb-2">Trusted by Investors Across India</h3>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-8">
+            <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fas fa-shield-alt text-4xl text-gray-600"></i>
+                <p class="text-sm font-medium text-gray-500 mt-2">256-bit Encryption</p>
+            </div>
+            <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fas fa-lock text-4xl text-gray-600"></i>
+                <p class="text-sm font-medium text-gray-500 mt-2">Secure Payments</p>
+            </div>
+            <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fas fa-user-shield text-4xl text-gray-600"></i>
+                <p class="text-sm font-medium text-gray-500 mt-2">Privacy Protected</p>
+            </div>
+            <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fas fa-medal text-4xl text-gray-600"></i>
+                <p class="text-sm font-medium text-gray-500 mt-2">SEBI Compliant</p>
+            </div>
+            <div class="grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fas fa-headset text-4xl text-gray-600"></i>
+                <p class="text-sm font-medium text-gray-500 mt-2">24/7 Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="font-display font-bold text-3xl md:text-4xl mb-4">Frequently Asked Questions</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Find answers to commonly asked questions about our service.
+            </p>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                        <span class="font-medium text-left">What exactly will I receive during the free trial?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-4 pb-4">
+                        <p class="text-gray-600">
+                            During the 7-day free trial, you'll receive the same premium content as our paid subscribers: daily market summaries, stock recommendations, sector analysis, and important economic updates - all delivered directly to your WhatsApp.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                        <span class="font-medium text-left">Do I need to provide payment information to start the free trial?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-4 pb-4">
+                        <p class="text-gray-600">
+                            No, you don't need to provide any payment information to start the free trial. We only ask for your name and mobile number to deliver the service via WhatsApp.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                        <span class="font-medium text-left">How can I cancel my subscription?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-4 pb-4">
+                        <p class="text-gray-600">
+                            You can cancel your subscription at any time by sending a message to our customer support through WhatsApp or by emailing us at support@marketpulse.com. There are no cancellation fees.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                        <span class="font-medium text-left">Who are the analysts behind the stock recommendations?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-4 pb-4">
+                        <p class="text-gray-600">
+                            Our team consists of experienced financial analysts with backgrounds in investment banking, portfolio management, and market research. All our analysts have at least 5 years of experience in the Indian stock market.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-md">
+                    <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                        <span class="font-medium text-left">What is your refund policy?</span>
+                        <i class="fas fa-chevron-down text-primary-600 transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-4 pb-4">
+                        <p class="text-gray-600">
+                            We offer a 100% satisfaction guarantee. If you're not satisfied with our service within the first 14 days of your paid subscription, we'll refund your payment in full. Simply contact our customer support team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/form-validation.js') }}"></script>
+{% endblock %}
