@@ -89,24 +89,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const isLastNameValid = validateLastName();
         const isMobileNumberValid = validateMobileNumber();
         
-        // If all validations pass
         if (isFirstNameValid && isLastNameValid && isMobileNumberValid) {
             // Disable submit button and show loading state
             submitButton.disabled = true;
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Processing...';
             
-            // Get form data
+            // Prepare URL-encoded form data
             const formData = new FormData(form);
+            const searchParams = new URLSearchParams();
+            for (const pair of formData.entries()) {
+                searchParams.append(pair[0], pair[1]);
+            }
             
-            // Send form data to server
-            fetch('/submit-form', {
+            // Send form data as URL encoded string
+            fetch('https://script.google.com/macros/s/AKfycbz3vKrqGzI2mpyI2YY43ofp3Jtb0SE0nDHlHX8NPHODJXq7QvNN_apRq2prY8_Ll4iz/exec', {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: searchParams.toString()
             })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // Hide form fields
+                    // Hide all input and buttons except success message and WhatsApp button
                     Array.from(form.querySelectorAll('input, button, div:not(#form-success):not(#whatsapp-button)')).forEach(el => {
                         if (el.parentElement !== formSuccess && el.parentElement !== whatsappButton) {
                             el.parentElement.style.display = 'none';
@@ -117,13 +123,24 @@ document.addEventListener('DOMContentLoaded', function() {
                     formSuccess.classList.remove('hidden');
                     whatsappButton.classList.remove('hidden');
                     
-                    // Set WhatsApp link
-                    whatsappLink.href = data.whatsapp_link;
+                    // Set WhatsApp link from response
+                    // Construct the WhatsApp link locally
+                    const firstName = form.querySelector('[name="first_name"]').value;
+                    const lastName = form.querySelector('[name="last_name"]').value;
+
+                    const message = `Hi, I'm ${firstName} ${lastName} and I'm interested in the free trial for your stock market news service.`;
+                    const whatsappUrl = `https://wa.me/917219437006?text=${encodeURIComponent(message)}`;
+
+                    // Option 1: Open in new tab
+                    window.open(whatsappUrl, '_blank');
+
+                    // Option 2: Open in same tab
+                    // window.location.href = whatsappUrl;
+
                     
                     // Scroll to success message
                     formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 } else {
-                    // Show error
                     alert('There was an error processing your request. Please try again.');
                     submitButton.disabled = false;
                     submitButton.innerHTML = 'Start Free Trial';

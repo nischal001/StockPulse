@@ -82,7 +82,7 @@ def submit_form():
         # Construct WhatsApp link
         whatsapp_number = os.environ.get("WHATSAPP_NUMBER", "918888888888")  # Default example number
         whatsapp_message = f"Hi, I'm {first_name} {last_name} and I'm interested in the free trial for your stock market news service."
-        whatsapp_link = f"https://wa.me/{whatsapp_number}?text={whatsapp_message}"
+        whatsapp_link = f"https://wa.me/9172119437006?text={whatsapp_message}"
         
         flash('Thank you for signing up! You will be redirected to WhatsApp to start your free trial.', 'success')
         return jsonify({"success": True, "whatsapp_link": whatsapp_link})
