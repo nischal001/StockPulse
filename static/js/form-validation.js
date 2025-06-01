@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const lastName = form.querySelector('[name="last_name"]').value;
 
                     const message = `Hi, I'm ${firstName} ${lastName} and I'm interested in the free trial for your stock market news service.`;
-                    const whatsappUrl = `https://wa.me/917219437006?text=${encodeURIComponent(message)}`;
+                    const whatsappUrl = `https://wa.me/917276290712?text=${encodeURIComponent(message)}`;
 
                     // Option 1: Open in new tab
                     window.open(whatsappUrl, '_blank');
